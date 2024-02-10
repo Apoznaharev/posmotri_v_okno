@@ -210,7 +210,7 @@ ol {
 
 .title {
   color: #ffffff;
-  font-family: "Oswald";
+  font-family: "Oswald", Arial, sans-serif;
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;

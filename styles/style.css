@@ -68,7 +68,7 @@ ol {
   position: relative;
   display: flex;
   width: 100%;
-  max-height: 386px;
+  height: 386px;
 }
 
 .result__video {
@@ -93,11 +93,13 @@ ol {
 
 .search-form__fieldset {
   border: none;
+  height: 100%;
 }
 
 .search-form__label {
   width: fit-content;
   cursor: pointer;
+  height: 22px;
 }
 
 .search-form__textfield {
@@ -152,24 +154,25 @@ ol {
 
 .search-form__pseudo-checkbox {
   display: inline-block;
-  width: 17px;
-  height: 17px;
+  width: 19px;
+  height: 19px;
   outline: 1px white solid;
   background-color: transparent;
+  margin-left: 1px;
 }
 
 .search-form__checkbox[type="checkbox"]:checked + .search-form__pseudo-checkbox,
 .search-form__label:active .search-form__pseudo-checkbox {
-  width: 17px;
-  height: 17px;
+  width: 19px;
+  height: 19px;
   border: 1px solid #1b1919;
   outline: 1px solid white;
   background-color: white;
+  outline-offset: 0;
 }
 
 .button {
-  border: none;
-  outline: 1px white solid;
+  border: 1px white solid;
   color: inherit;
   font-family: inherit;
   font-weight: 700;
@@ -189,6 +192,7 @@ ol {
   text-decoration: none;
   background-color: #545050;
 }
+
 .button:focus {
   outline: none;
 }
@@ -220,7 +224,7 @@ ol {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 31px;
   width: 100%;
   overflow: hidden auto;
   scroll-behavior: smooth;
@@ -228,13 +232,13 @@ ol {
 
 .content__card-link {
   display: block;
+  margin: 2px;
   text-decoration: none;
 }
 .content__card-link:focus {
   outline: none;
 }
 .content__card-link:focus-visible {
-  margin: 2px;
   outline: 1px solid white;
 }
 .content__card-link_current {
@@ -250,7 +254,7 @@ ol {
   color: #ffffff;
   font-family: "Oswald", Arial, sans-serif;
   font-size: 30px;
-  line-height: 100%;
+  line-height: 140%;
   text-decoration-line: none;
   text-transform: uppercase;
 }
@@ -263,8 +267,7 @@ ol {
 
 .content__video-card-thumbnail {
   width: 194px;
-  height: 100%;
-  margin-right: -20px;
+  height: 103px;
   object-fit: cover;
   object-position: center;
 }

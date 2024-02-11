@@ -83,6 +83,7 @@ ol {
   grid-template-columns: 225px 212px 194px;
   justify-content: space-between;
   align-items: flex-end;
+  height: 54px;
 }
 
 .search-form__fieldset-title {
@@ -115,6 +116,8 @@ ol {
   cursor: pointer;
   resize: none;
   appearance: none;
+  margin-top: 3px;
+  padding-inline-start: 0px;
 }
 
 .search-form__textfield:focus {
@@ -123,11 +126,6 @@ ol {
 
 .search-form__label-text {
   padding-left: 1px;
-  font-family: inherit;
-  font-weight: inherit;
-  font-size: inherit;
-  font-style: inherit;
-  line-height: 29px;
 }
 
 .search-form__label:focus {
@@ -150,21 +148,23 @@ ol {
 .search-form__checkbox-list {
   display: flex;
   justify-content: space-between;
+  margin-top: 2px;
 }
 
 .search-form__pseudo-checkbox {
   display: inline-block;
-  width: 19px;
-  height: 19px;
+  width: 17px;
+  height: 17px;
   outline: 1px white solid;
   background-color: transparent;
   margin-left: 1px;
+  margin-top: 3px;
 }
 
 .search-form__checkbox[type="checkbox"]:checked + .search-form__pseudo-checkbox,
 .search-form__label:active .search-form__pseudo-checkbox {
-  width: 19px;
-  height: 19px;
+  width: 17px;
+  height: 17px;
   border: 1px solid #1b1919;
   outline: 1px solid white;
   background-color: white;
@@ -224,7 +224,7 @@ ol {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 31px;
+  gap: 25px;
   width: 100%;
   overflow: hidden auto;
   scroll-behavior: smooth;
@@ -248,13 +248,13 @@ ol {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  height: 107px;
 }
 
 .content__video-card-title {
   color: #ffffff;
   font-family: "Oswald", Arial, sans-serif;
   font-size: 30px;
-  line-height: 140%;
   text-decoration-line: none;
   text-transform: uppercase;
 }
@@ -262,14 +262,15 @@ ol {
 .content__video-card-description {
   padding-top: 6px;
   color: #ffffff;
-  line-height: 16px;
+  line-height: 0;
 }
 
 .content__video-card-thumbnail {
   width: 194px;
-  height: 103px;
   object-fit: cover;
   object-position: center;
+  padding-bottom: 2px;
+  padding-top: 2px;
 }
 
 .more-button {

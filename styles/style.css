@@ -55,7 +55,6 @@ ol {
   grid-template-columns: 711px 399px;
   align-items: end;
   gap: 30px;
-  height: 534px;
 }
 
 .result {
@@ -226,8 +225,8 @@ ol {
   overflow: hidden auto;
   scroll-behavior: smooth;
 }
-.content__list-item + .content__list-item {
-  margin-top: 25px;
+.content__list-item:not(:last-of-type) {
+  margin-bottom: 25px;
 }
 .content__card-link {
   display: block;
@@ -274,7 +273,7 @@ ol {
 
 .more-button {
   width: 100%;
-  margin: 27px 1px 1px;
-  padding: 0px;
+  margin: 0 2px 3px;
+  padding: 0;
   padding-left: 23px;
 }
